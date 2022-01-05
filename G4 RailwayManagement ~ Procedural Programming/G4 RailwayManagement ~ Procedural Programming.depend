@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1641396538 source:c:\users\windows\onedrive\documents\~programming\c\g4 railwaymanagement ~ procedural programming\main.cpp
+	<iostream>
+	<windows.h>
+	<algorithm>
+	<iomanip>
+	<string>
+
