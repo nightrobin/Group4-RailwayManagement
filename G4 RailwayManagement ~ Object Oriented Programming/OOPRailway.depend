@@ -1,0 +1,67 @@
+# depslib dependency file v1.0
+1641229951 source:c:\users\windows\onedrive\documents\~programming\c\ooprailway\main.cpp
+	<iostream>
+	<windows.h>
+	<algorithm>
+	<iomanip>
+	<ctime>
+	<sstream>
+	<string>
+	"Railway.h"
+	"Ticket.h"
+
+1641393901 source:c:\users\windows\onedrive\documents\~programming\c\ooprailway\src\railway.cpp
+	"Railway.h"
+	"Ticket.h"
+	<iostream>
+	<algorithm>
+	<windows.h>
+	<ctime>
+
+1641464351 c:\users\windows\onedrive\documents\~programming\c\ooprailway\include\railway.h
+	"Ticket.h"
+
+1641303247 source:c:\users\windows\onedrive\documents\~programming\c\ooprailway\src\ticket.cpp
+	"Ticket.h"
+	<iostream>
+	<iomanip>
+	<ctime>
+	<sstream>
+
+1641393804 c:\users\windows\onedrive\documents\~programming\c\ooprailway\include\ticket.h
+	<iostream>
+	<string>
+
+1641731352 source:c:\users\windows\onedrive\documents\~programming\c\gr4 - railwaymanagement\src\ticket.cpp
+	"Ticket.h"
+	<iostream>
+	<iomanip>
+	<ctime>
+	<sstream>
+
+1641729964 c:\users\windows\onedrive\documents\~programming\c\gr4 - railwaymanagement\include\ticket.h
+	<iostream>
+	<string>
+
+1641731601 source:c:\users\windows\onedrive\documents\~programming\c\gr4 - railwaymanagement\main.cpp
+	<iostream>
+	<windows.h>
+	<algorithm>
+	<iomanip>
+	<ctime>
+	<sstream>
+	<string>
+	"Railway.h"
+	"Ticket.h"
+
+1641731385 c:\users\windows\onedrive\documents\~programming\c\gr4 - railwaymanagement\include\railway.h
+	"Ticket.h"
+
+1641731395 source:c:\users\windows\onedrive\documents\~programming\c\gr4 - railwaymanagement\src\railway.cpp
+	"Railway.h"
+	"Ticket.h"
+	<iostream>
+	<algorithm>
+	<windows.h>
+	<ctime>
+
