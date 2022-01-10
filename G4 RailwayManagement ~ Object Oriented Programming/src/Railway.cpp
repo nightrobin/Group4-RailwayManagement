@@ -75,6 +75,67 @@ void Railway::User()
 void Railway::buyTicket()
 {
 
+                                         {
+                                        int ticketquantity;
+                                        int totalnoofticket;
+                                        int ticketPrice;
+                                        cout << "\nHow many tickets would you like to buy?" << endl;
+                                        cin >> ticketquantity;
+                                        totalnoofticket = ticketquantity;
+                                        cout << "\nYour total number of ticket is" << " " << totalnoofticket << endl;
+                                         }
+
+                                                        int discount;
+
+
+                                                        cout << "\nDo you have a PWD (Person with Disability) ID or Senior ID?" << endl;
+                                                        cout << "[1] YES" << endl;
+                                                        cout << "[2] NO" << endl;
+                                                        cout << "= ";
+                                                        cin >> discount;
+                                                        cout << "\nNote: The discount may only be applied to one ticket." << endl;
+                                                        cout << "\nAre you sure to continue?" << endl;
+                                                        cout << "[1] YES" << endl;
+                                                        cout << "[2] NO" << endl;
+                                                        cout << "= ";
+                                                        cin >> discount;
+
+                                                        if (discount == 1)
+                                                        {
+                                                            while (true)
+                                                            {
+
+                                                                int pwd;
+                                                                int tdiscount;
+                                                                int totalnoofticket;
+                                                                int ticketquantity = totalnoofticket;
+                                                                tdiscount = price * ticketquantity;
+                                                                cout << "\nThe original price is '" << tdiscount << "' and has been discounted by 20%" << endl;
+                                                                pwd = tdiscount - (price * 0.2);
+                                                                cout << "The ticket price is now: " << pwd << endl;
+                                                                cout << "\nBuy the Ticket?" << endl;
+                                                                cout << "[1] YES" << endl;
+                                                                cout << "[2] NO" << endl;
+                                                                cout << "= ";
+                                                                int verify;
+                                                                cin >> verify;
+
+                                                                if(verify == 1)
+                                                                {
+                                                                    cout << "\n==========================================" << endl;
+                                                                    cout << ">>> Ticket has been bought! Thank you! <<<" << endl;
+                                                                    cout << "==========================================" << endl;
+                                                                    if (ticket[0][0] == "0")
+                                                                    {
+                                                                        ticket[0][0] = station[origin-1];
+                                                                        ticket[0][1] = station[destination-1];
+                                                                        ticket[0][2] = "(PWD/SENIOR Discount) " + std::to_string(pwd);
+                                                                        ticket[0][3] = date();
+                                                                        sen += 1;
+                                                                        j += 1;
+                                                                        break;
+                                                                    }
+                                                                   
 }
 
 // Jahnielle
