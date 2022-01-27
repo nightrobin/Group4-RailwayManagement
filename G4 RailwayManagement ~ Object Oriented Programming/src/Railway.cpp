@@ -322,8 +322,7 @@ while (true) // Get da Quantity
     int discount = (price * 0.2) * PWD; // (price * 0.2) is yung formula ng discount
                                         // PWD is ilang tickets and PWD discounted
 
-<<<<<<< Updated upstream
-=======
+
     for (int x = 0; x < ticketquantity; x++)
     {
         displaytotalprice = Fee.stationFeeGet(origin, destination) * ticketquantity; // get the total price of the tickets
@@ -384,7 +383,7 @@ while (true) // Get da Quantity
             defaultFail();
         }
     }
->>>>>>> Stashed changes
+
 }
 
 
@@ -398,8 +397,6 @@ void Railway::viewTicket(long long number)
 // Matthew
 void Railway::viewFee()
 {
-<<<<<<< Updated upstream
-=======
     string station[13] {"Recto" ,"Legarda" ,"Pureza" , "V Mapa", "J Ruiz", "Gilmore", "Betty Go", "Cubao", "Anonas", "Katipunan", "Santolan", "Marikina", "Antipolo"};
 
     // Array for Prices
@@ -486,7 +483,7 @@ void Railway::viewFee()
                                                 cout << "   " << Antipolo[i] << "   ";
                                             }
                                             cout << "\n\n";
->>>>>>> Stashed changes
+
 
 
 }
