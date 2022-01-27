@@ -11,6 +11,8 @@ class Ticket
         Ticket();
         virtual ~Ticket();
 
+        string dateCheck(); // For getting the date
+
         /* Setters and Getters */
         // Number
         void numberSet(int x)
@@ -81,6 +83,16 @@ class Ticket
             return Date;
         }
 
+         // Station Fees
+        void stationFeeSet(int origin, int destination, int price)
+        {
+            stationFees[origin][destination] = price;
+        }
+        int stationFeeGet(int origin, int destination)
+        {
+            return stationFees[origin][destination];
+        }
+
 
     protected:
 
@@ -94,6 +106,22 @@ class Ticket
         int intDestination;
         int Price;
         string Date;
+
+         // Admin
+         // mga presyo ng mga ticket
+        int stationFees[13][13] = {{0, 15, 15, 15, 20, 20, 20, 20, 25, 25, 25, 30, 30}, // Recto
+                                {15, 0, 15, 15, 15, 20, 20, 20, 20, 25, 25, 25, 30}, // Legarda
+                                {15, 15, 0, 15, 15, 15, 20, 20, 20, 20, 25, 25, 30}, // Pureza
+                                {15, 15, 15, 0, 15, 15, 15, 20, 20, 20, 25, 25, 25}, // V Mapa
+                                {20, 15, 15, 15, 0, 15, 15, 15, 20, 20, 20, 25, 25}, // J Ruiz
+                                {20, 20, 15, 15, 15, 0, 15, 15, 15, 20, 20, 20, 25}, // Gilmore
+                                {20, 20, 20, 15, 15, 15, 0, 15, 15, 15, 20, 20, 25}, // Betty Go
+                                {20, 20, 20, 20, 15, 15, 15, 0, 15, 15, 15, 20, 20}, // Cubao
+                                {25, 20, 20, 20, 20, 15, 15, 15, 0, 15, 15, 20, 20}, // Anonas
+                                {25, 25, 20, 20, 20, 20, 15, 15, 15, 0, 15, 15, 20}, // Katipunan
+                                {25, 25, 25, 25, 20, 20, 20, 15, 15, 15, 0, 15, 15}, // Santolan
+                                {30, 25, 25, 25, 25, 20, 20, 20, 20, 15, 15, 0, 15}, // Marikina
+                                {30, 30, 30, 25, 25, 25, 25, 20, 20, 20, 15, 15, 0}}; // Antipolo
 
 
 };

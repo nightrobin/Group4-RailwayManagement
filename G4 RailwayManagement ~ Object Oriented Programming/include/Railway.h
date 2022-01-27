@@ -9,10 +9,12 @@ class Railway
         Railway();
         virtual ~Railway();
 
-        static const int ticketLimit = 100;
-        int usedTickets = 0;
+        string station[13] = {"Recto" ,"Legarda" ,"Pureza" , "V Mapa", "J Ruiz", "Gilmore", "Betty Go", "Cubao", "Anonas", "Katipunan", "Santolan", "Marikina", "Antipolo"};
+        static const int ticketLimit = 100; // hanggang ilang tickets pwedeng bilin ng mga user. for now 100 baka mas bumagal pang marami
+        int usedTickets = 0; // ilan na nabiling tickets ng mga users
 
-        Ticket tickets[ticketLimit];
+        Ticket tickets[ticketLimit]; // gawa object for tickets
+        Ticket Fee; // For fees idk
 
         // Both
         void inputFail();
@@ -20,9 +22,10 @@ class Railway
         int checkNumber(long long number);
 
         // User
-        void User();
-        void buyTicket();
-        void viewTicket();
+        int PWDCheck(int quantity);
+        void User(long long number);
+        void buyTicket(long long number);
+        void viewTicket(long long number);
         void viewFee();
 
         // Admin

@@ -50,7 +50,7 @@ int main()
             {
                 // Method/Function for going into the User Interface
                 // Anything na valid na 10 digit number is pupunta rito
-                rlwy.User();
+                rlwy.User(number);
                 // Pag nagend na method ni User and isa lang naman ang reason pag nag end si user which is nag log out na sha so
                 // Mag aadd or increment yung login which na papatigilin yung while loop tas babalik ule yung gumagamit sa pinakaunang menu
                 login += 1;
